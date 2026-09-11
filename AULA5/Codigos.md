@@ -61,3 +61,4 @@
 
   
  -- SELECT * FROM streaming ORDER BY avaliacao DESC LIMIT 10;
+
