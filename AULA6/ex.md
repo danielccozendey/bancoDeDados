@@ -245,4 +245,82 @@ INSERT INTO produtos (nome, autor, preco, genero, estoque, ano_publicacao) VALUE
 
 
 
+bloco 1 
+
+**1**
+
+SELECT *
+FROM livros
+LIMIT 10;
+
+**2**
+
+SELECT titulo, autor, preco
+FROM livros;
+
+**3**
+
+SELECT DISTINCT genero
+FROM livros
+ORDER BY genero ASC;
+
+**4**
+
+SELECT COUNT(DISTINCT autor) AS quantidade_autores
+FROM livros;
+
+**5**
+
+SELECT titulo, preco
+FROM livros
+ORDER BY preco DESC
+LIMIT 5;
+
+**6**
+
+SELECT titulo, estoque
+FROM livros
+ORDER BY estoque ASC
+LIMIT 5;
+
+
+**7**
+
+SELECT titulo, estoque
+FROM livros
+WHERE genero = 'Técnico';
+
+**8**
+
+SELECT titulo, preco
+FROM livros
+WHERE preco > 200.00;
+
+**9**
+
+SELECT titulo, preco
+FROM livros
+WHERE preco BETWEEN 40.00 AND 70.00;
+
+**10**
+
+SELECT titulo, estoque
+FROM livros
+WHERE estoque < 5;
+
+**11**
+
+SELECT titulo, autor, ano_publicacao
+FROM livros
+WHERE ano_publicacao < 1900
+ORDER BY ano_publicacao ASC;
+
+**12**
+
+SELECT titulo, ano_publicacao, genero
+FROM livros
+WHERE ano_publicacao BETWEEN 2010 AND 2020
+ORDER BY ano_publicacao ASC;
+
+
 
